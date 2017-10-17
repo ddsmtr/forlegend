@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Главная</title>
     <meta charset="utf-8">
+    <!--Для нормального отображения на мобильных устройствах-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/font-awesome.min.css' />
     <link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css">
     <script src="/vendor/bower_components/jquery/dist/jquery.js"></script>
     <script src="/vendor/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!--Добавление шрифта-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Эта кнопка будет видна только когда экран уменьшится до размеров мобильного телефона.
+           При нажатии на нее, будет выползать меню, собственно с классном navber-collapse -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" name="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Legend</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Залы</a></li>
+            <li><a href="#">Расписание</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
